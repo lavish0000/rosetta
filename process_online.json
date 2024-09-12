@@ -11,10 +11,10 @@
         "name": "VeChain Rosetta Api Server",
         "script": "/usr/src/app/rosetta/dist/index.js",
         "exec_mode":"cluster",
-        "instances" : "4",
+        "instances" : "2",
         "autorestart":true,
         "env":{
-          "NODEURL":"http://localhost:8669"
+          "NODEURL":"https://peaq.api.onfinality.io/public"
         },
         "out_file":"/data/logs/rosetta.log",
         "error_file":"/data/logs/rosetta_error.log"
