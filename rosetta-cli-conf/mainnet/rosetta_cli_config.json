@@ -1,6 +1,6 @@
 {
   "network": {
-    "blockchain": "peaq",
+    "blockchain": "vechainthor",
     "network": "main"
   },
   "online_url": "http://localhost:8080",
