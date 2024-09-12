@@ -65,8 +65,8 @@ class ApiServer {
         this.env.config = config;
         this.env.config.mode = (process.env['MODE'] || 'online') as string;
         this.env.config.network = (process.env['NETWORK'] || 'main') as string;
-        this.env.config.nodeApi = (process.env['NODEURL'] || '') as string;
-        this.env.config.serviceName = 'VeChain Rosetta API';
+        this.env.config.nodeApi = (process.env['NODEURL'] || 'https://peaq.api.onfinality.io/public') as string;
+        this.env.config.serviceName = 'peaq Rosetta API';
         this.env.logger = new Logger(this.env);
     }
 
