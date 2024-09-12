@@ -4,11 +4,11 @@ ARG THOR_VERSION=v2.0.4
 FROM golang:1.19 as builder
 
 WORKDIR  /go/thor
-RUN git clone https://github.com/vechain/thor.git /go/thor
-RUN git checkout ${THOR_VERSION}
-RUN make all
+# RUN git clone https://github.com/vechain/thor.git /go/thor
+# RUN git checkout ${THOR_VERSION}
+# RUN make all
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 WORKDIR /data
 WORKDIR /usr/src/app
