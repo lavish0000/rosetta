@@ -23,16 +23,16 @@ const config = require(configPath);
 
 
 export const VETCurrency:Currency = {
-    symbol:'VET',
+    symbol:'PEAQ',
     decimals:18,
     metadata:{}
 }
 
 export const VTHOCurrency:Currency = {
-    symbol:'VTHO',
+    symbol:'PEAQ',
     decimals:18,
     metadata:{
-        contractAddress:'0x0000000000000000000000000000456e65726779'
+        contractAddress:'0x0000000000000000000000000000000000000809'
     }
 }
 
@@ -65,7 +65,7 @@ class ApiServer {
         this.env.config = config;
         this.env.config.mode = (process.env['MODE'] || 'online') as string;
         this.env.config.network = (process.env['NETWORK'] || 'main') as string;
-        this.env.config.nodeApi = (process.env['NODEURL'] || 'https://peaq.api.onfinality.io/public') as string;
+        this.env.config.nodeApi = ('https://peaq.api.onfinality.io/public') as string;
         this.env.config.serviceName = 'peaq Rosetta API';
         this.env.logger = new Logger(this.env);
     }
