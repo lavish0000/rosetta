@@ -19,7 +19,7 @@ RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash
 RUN apt-get install -y nodejs
 
-RUN git clone https://github.com/vechain/rosetta.git
+RUN git clone https://github.com/lavish0000/rosetta.git
 WORKDIR /usr/src/app/rosetta
 RUN git checkout master
 RUN npm ci && npm run build
